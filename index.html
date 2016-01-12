@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title>SPA Car App</title>
+    <base href="/" />
+    <link rel="stylesheet" href="https://gitcdn.xyz/repo/angular/bower-material/v0.11.0/angular-material.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="\stylesheets\style.css" />
+    <link rel="stylesheet" href="\stylesheets\animate.css">
+</head>
+<body ng-controller="AccountController as account">
+<md-toolbar layout="row" >
+    <h1 style="margin-left:31">This is my Car App</h1>
+        <a href="/home" style="margin-left:1344;margin-top:40">Home</a>
+        <a href="/cars" style="margin-left:8;margin-top:40">Cars</a>
+
+</md-toolbar>
+
+
+
+
+    <ng-view></ng-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-messages.min.js"></script>
+    <script src="https://gitcdn.xyz/repo/angular/bower-material/v0.11.0/angular-material.js"></script>
+
+
+
+    <script src="/scripts/angular-route/angular-route.min.js"></script>
+    <script src="/scripts/angular-resource/angular-resource.min.js"></script>
+
+
+    <script src="/ngApp/app.js"></script>
+    <script src="/ngApp/controllers/controllers.js"></script>
+    <script src="/ngApp/services/services.js"></script>
+    <script src="/ngApp/controllers/CarController.js"></script>
+    <script src="/ngApp/services/carService.js"></script>
+
+    <script src="/ngApp/controllers/accountController.js"></script>
+    <script src="/ngApp/services/accountService.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "mime/mime.d.ts": {
+      "commit": "36c6ce86fb64bafb28ec95dc78c6b98228b45c8d"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "36c6ce86fb64bafb28ec95dc78c6b98228b45c8d"
+    },
+    "express/express.d.ts": {
+      "commit": "36c6ce86fb64bafb28ec95dc78c6b98228b45c8d"
+    },
+    "node/node.d.ts": {
+      "commit": "36c6ce86fb64bafb28ec95dc78c6b98228b45c8d"
+    },
+    "serve-favicon/serve-favicon.d.ts": {
+      "commit": "36c6ce86fb64bafb28ec95dc78c6b98228b45c8d"
+    },
+    "morgan/morgan.d.ts": {
+      "commit": "36c6ce86fb64bafb28ec95dc78c6b98228b45c8d"
+    },
+    "cookie-parser/cookie-parser.d.ts": {
+      "commit": "36c6ce86fb64bafb28ec95dc78c6b98228b45c8d"
+    },
+    "body-parser/body-parser.d.ts": {
+      "commit": "36c6ce86fb64bafb28ec95dc78c6b98228b45c8d"
+    },
+    "angularjs/angular.d.ts": {
+      "commit": "ba257a9b91bc0de1bdd9091b6723194c905a902a"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "ba257a9b91bc0de1bdd9091b6723194c905a902a"
+    },
+    "angularjs/angular-route.d.ts": {
+      "commit": "36c6ce86fb64bafb28ec95dc78c6b98228b45c8d"
+    },
+    "angularjs/angular-resource.d.ts": {
+      "commit": "36c6ce86fb64bafb28ec95dc78c6b98228b45c8d"
+    },
+    "angular-material/angular-material.d.ts": {
+      "commit": "ba257a9b91bc0de1bdd9091b6723194c905a902a"
+    }
+  }
+}

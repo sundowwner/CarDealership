@@ -1,0 +1,68 @@
+<md-content>
+
+
+
+    <div layout="row">
+
+
+        <div layout="row" >
+            <md-content>
+                <div style="margin-left:700">
+                    <h1 >Car Dealership</h1>
+                </div>
+
+
+                <div layout="column" flex="33">
+                    <div class="">
+                        <h3 style="margin-left: 67">1. Start your search by make</h3>
+                    </div>
+                    <md-sidenav style="margin-left: 63" md-is-locked-open="true">
+
+                        <md-input-container md-component-id="right" class="md-whiteframe-z2">
+                            <label>Select a Car Make</label>
+                            <md-select ng-model="vm.selectedMake" ng-change="vm.getCars(vm.selectedMake)">
+                                <md-option ng-value="c.id" ng-repeat="c in vm.makes">{{c.name}}</md-option>
+                            </md-select>
+                        </md-input-container>
+
+                        <div>
+
+                            <ul style="list-style-type:none">
+                                <li ng-show="vm.selectedMake" ng-repeat="a in vm.cars | filter: {CarMakeId:vm.selectedMake}">{{ a.ShortDescription}}: <br>
+                                    <img ng-src="{{a.ImageUrl}}" height="300" width="300"/><br>{{ a.Price | currency }}<br>{{a.FullDescription}} <br><br><br><br></li>
+                                </ul>
+                            </div>
+                        </md-sidenav>
+
+                    </div>
+                    <div layout="column"  flex="66" layout-fill >
+                        <div class="">
+                            <h3 style="margin-left:685;margin-top:-118">2. Or start your search using any particular detail</h3>
+                        </div><br><br><br>
+
+                        <md-input style="margin-left:685">
+                            <input style="margin-top:-121;margin-left:10" type="text" placeholder="Search Cars" ng-model="searchText"/><br><br>
+                        </md-input>
+                        <md-card>
+                            <table style="margin-left:685;margin-top:-102
+                            " class="md-whiteframe-z3">
+
+                            <tr ng-repeat="a in vm.cars |  filter:searchText">
+                                <td>
+                                    <td>{{a.ShortDescription}}</td>
+                                    <td>{{a.FullDescription}}</td>
+                                    <td>{{a.Price | currency }}</td>
+                                    <td><br><img ng-src="{{a.ImageUrl}}" height="200" width="200"/></td>
+                                </td>
+                            </tr>
+                        </md-card>
+                    </table>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+        <md-content>
